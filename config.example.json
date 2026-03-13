@@ -2,16 +2,19 @@
   "user": {
     "name": "张三",
     "aliases": ["Zhang San", "张san"],
-    "extras": ["某公司", "某大学"]
+    "extras": ["某公司", "某大学"],
+    "ideal_image": "专业的技术人员，正面形象",
+    "must_remove": ["手机号", "家庭住址", "旧简历"]
+  },
+  "strategy": {
+    "approach": "先礼后兵",
+    "negotiate_wait_hours": 72,
+    "report_wait_days": 7,
+    "auto_escalate": true
   },
   "monitoring": {
     "enabled": true,
     "frequency": "weekly",
     "notify": true
-  },
-  "automation": {
-    "auto_report": false,
-    "screenshot": true,
-    "use_node_browser": true
   }
 }

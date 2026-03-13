@@ -191,6 +191,7 @@ def cmd_list(args):
     
     status_emoji = {
         'pending': '⏳',
+        'contacted': '💬',
         'reported': '📤',
         'following': '👀',
         'resolved': '✅',
@@ -284,7 +285,7 @@ def main():
     # update 命令
     update_parser = subparsers.add_parser('update', help='更新案例状态')
     update_parser.add_argument('id', help='案例 ID')
-    update_parser.add_argument('status', choices=['pending', 'reported', 'following', 'resolved', 'failed'])
+    update_parser.add_argument('status', choices=['pending', 'contacted', 'reported', 'following', 'resolved', 'failed'])
     update_parser.add_argument('--note', '-n', help='添加备注')
     
     # info 命令
